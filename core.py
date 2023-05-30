@@ -1,7 +1,6 @@
 
-class Dist:
-    def __init__(self):
-        self.word
+
+def get_distance(inp, org):
     
 
 def get_closest(name, music_list):
