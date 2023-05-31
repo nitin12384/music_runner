@@ -38,6 +38,8 @@ def split_to_alphanums(s:str)->list:
     for i in range(0,n):
         c = s[i]
         if c.isalpha() or c.isdigit() :
+            if c.isalpha():
+                c = c.lower()
             word += c
             if i == n-1 :
                 wordlist.append(word)
