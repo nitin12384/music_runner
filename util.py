@@ -12,6 +12,22 @@ def get_arg_full():
 def remove_filename_extension(filename : str) -> str :
     return filename[0:-4]
 
+def split_to_alphanums(s:str)->list:
+    n = len(s)
+    wordlist = []
+    word = ""
+    for i in range(0,n):
+        c = s[i]
+        if c.isalpha() or c.isdigit() :
+            word += c
+            if i == n-1 :
+                wordlist.append(word)
+        else :
+            # if word is not empty
+            if word != "" :
+                wordlist.append(word)
+            word = ""
+        
 
 def string_reduction(s:str)->str:
     # remove space, keep case small

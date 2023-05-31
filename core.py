@@ -1,7 +1,19 @@
+import algo.edit_dist
 
+def word_closeness_score(inp : list, targ : list):
+    ninp = len(inp)
+    empty_list = [ -1 for i in range(ninp)]
+    res = {
+        'match_pos' : empty_list, 
+        'edit_dist' : empty_list,
+        }
+    
+    for i in range(ninp):
+        # find word[i] in targ
+        pass
 
 def get_distance(inp, org):
-    
+    pass
 
 def get_closest(name, music_list):
     min_dist = 1000000000
