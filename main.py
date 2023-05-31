@@ -18,6 +18,7 @@ def main() :
     targ_name, targ_path = get_closest(name, music_list)
     
     print("Most similiar song {} on path {}".format(targ_name, targ_path))
+    input("Press any key to play ...")
     play(targ_path, player_path)
 
 main()

@@ -22,6 +22,11 @@ class Dist:
     def __lt__(self, obj):
         # return True iff self < obj
         # more perfect match, less distanc
+        
+        # obj has infinite distance
+        if obj.tot_edit_dist == -1 :
+            return True
+
         if self.n_perf_match != obj.n_perf_match :
             return self.n_perf_match > obj.n_perf_match
         
@@ -32,8 +37,6 @@ class Dist:
         return self.tot_edit_dist < obj.tot_edit_dist
 
 
-# a dummy infdist object
-InfDist = Dist()
 
 def word_closeness(inp_list : list, targ_list : list):
     ninp, ntarg = len(inp_list), len(targ_list)
@@ -80,7 +83,7 @@ def get_closest(name, music_list):
     name_red = string_reduction(name)
     name_word_list = split_to_alphanums(name)
 
-    min_dist = InfDist
+    min_dist = Dist()
     targ_name = ""
     targ_path = ""
     for cur_name, path in music_list :
