@@ -1,6 +1,9 @@
 
 from datetime import datetime
+import sys
+import os
 
+from config import path_seperator
 
 class Logger:
     @staticmethod
@@ -17,7 +20,11 @@ def get_arg_full():
     assert nargs>=2 , "Give the name for music file"
     res = ""
     for arg in sys.argv[1:] :
-        res += arg
+        res += arg + " "
+    
+    # remove last space
+    res = res.rstrip()
+    return res
 
 
 # Todo - Maybe generalize this
@@ -39,6 +46,7 @@ def split_to_alphanums(s:str)->list:
             if word != "" :
                 wordlist.append(word)
             word = ""
+    return wordlist
         
 
 def string_reduction(s:str)->str:
@@ -57,6 +65,6 @@ def string_reduction(s:str)->str:
 def build_files_list(dir_list):
     file_list = []
     for dir in dir_list :
-        file_list +=[ (remove_extension(cur), dir + path_seperator + cur) for cur in os.listdir(dir)]
+        file_list +=[ (remove_filename_extension(cur), dir + path_seperator + cur) for cur in os.listdir(dir)]
         
     return file_list

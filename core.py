@@ -26,7 +26,7 @@ class Dist:
             return self.n_perf_match > obj.n_perf_match
         
         # same n_perf_match
-        if self.n_match != obj.n_perf :
+        if self.n_match != obj.n_match :
             return self.n_match > obj.n_match 
         
         return self.tot_edit_dist < obj.tot_edit_dist
@@ -49,7 +49,7 @@ def word_closeness(inp_list : list, targ_list : list):
         # find word[i] in targ
         
         # floor of ceil
-        x_thresh = math.floor(dist_fraction_thresh*len(word[i]))
+        x_thresh = math.floor(dist_fraction_thresh*len(inp_list[i]))
         minx, reqj = math.inf,-1
         for j in range(ntarg):
             x = edit_dist(inp_list[i], targ_list[j])
