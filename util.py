@@ -1,4 +1,16 @@
 
+from datetime import datetime
+
+
+class Logger:
+    @staticmethod
+    def log(msg):
+        # msg could be str or may not be ...
+        print('[' + str(datetime.now()) + '] ' + msg)
+    @staticmethod
+    def info(msg):
+        print('[' + str(datetime.now()) + '] ' + msg)
+
 # return the arg as string
 def get_arg_full():
     nargs = len(sys.argv)

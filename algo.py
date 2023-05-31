@@ -1,4 +1,6 @@
+# todo put edge cases for speedup ?
 def edit_dist(a:str, b:str):
+
     na,nb = len(a), len(b)
 
     dp = [ [ 0 for i in range(nb+1)] for j in range(na+1)]
