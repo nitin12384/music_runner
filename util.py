@@ -16,12 +16,9 @@ class Logger:
 
 # return the arg as string
 def get_arg_full():
-    nargs = len(sys.argv)
-    assert nargs>=2 , "Give the name for music file"
     res = ""
     for arg in sys.argv[1:] :
         res += arg + " "
-    
     # remove last space
     res = res.rstrip()
     return res
