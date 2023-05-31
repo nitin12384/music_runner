@@ -8,7 +8,7 @@ from util import get_arg_full, build_files_list
 
 
 def play(file_path, player_path):
-    subprocess.run([player_path, file_path])
+    subprocess.Popen([player_path, file_path])
 
 def main() :
     name = get_arg_full()
