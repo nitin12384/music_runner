@@ -7,5 +7,5 @@ player_path = r"C:\Program Files (x86)\VideoLAN\VLC\vlc.exe"
 # sb.run([r"C:\Program Files (x86)\VideoLAN\VLC\vlc.exe", r"C:\Users\nitin\Music\Tracks\Alone.mp3"])
 
 
-dm = False
+dm = True
 path_seperator = "\\" 

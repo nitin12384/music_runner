@@ -21,7 +21,7 @@ def edit_dist(a:str, b:str):
             else :
                 dp[i+1][j+1] = 1 + min(dp[i+1][j], dp[i][j+1], dp[i][j])
 
-    if dm :
-        print(a, b, " : edit dist = ", dp[na][nb])
+    #if dm :
+        #print(a, b, " : edit dist = ", dp[na][nb])
 
     return dp[na][nb] 

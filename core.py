@@ -16,8 +16,8 @@ class Dist:
         self.tot_edit_dist = -1
 
     def __str__(self):
-        return '[ n_match : ' + str(n_match) + ', n_perf_match : ' + str(n_perf_match) + \
-        ', tot_edit_dist : ' + str(tot_edit_dist) + ']'
+        return '[ n_match : ' + str(self.n_match) + ', n_perf_match : ' + str(self.n_perf_match) + \
+        ', tot_edit_dist : ' + str(self.tot_edit_dist) + ']'
     
     def __lt__(self, obj):
         # return True iff self < obj
