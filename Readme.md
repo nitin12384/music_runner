@@ -23,6 +23,15 @@ See the examples below .
 
 # Matching Algorithm
 
+For two strings, input string 'inp' and original string 'org', the distance is defined as a collection of three metrics
+( These metrics are ordered according to the priority in considering closeness. For instance, n_perf_match is considered the most important
+metric to determine closeness)
+- n_perf_match : Number of perfectly matched words
+- n_match : Number of matched words ( perfectly or approaximately matched)
+- tot_edit_dist : Edit distance between the two strings (only alphanumeric characters considered, alphabate case is ignored)
+
+For a given input, we just pick the song whose name matches the most.
+
 # Usage Example and Screenshots
 
 <img src='./screenshots/screenshot1.png'>
