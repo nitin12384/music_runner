@@ -2,6 +2,10 @@
 
 A program to automatically play songs stored offline in the system based on approximate name matching.
 
+# Todo
+- [] Add screenshot images in Readme
+- [x] Add Further Improvements
+
 # Requirements
 Python 3
 
