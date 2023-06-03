@@ -34,9 +34,9 @@ For a given input, we just pick the song whose name matches the most.
 
 # Usage Example and Screenshots
 
-<img src='./screenshots/screenshot1.png'>
-<img src='./screenshots/screenshot2.png'>
-<img src='./screenshots/screenshot3.png'>
+<img src="./screenshots/screenshot1.png">
+<img src="./screenshots/screenshot2.png">
+<img src="./screenshots/screenshot3.png">
 
 Configured alias using `cmder` tool to be able to use the program anywhere:
 ```
@@ -45,5 +45,5 @@ play_song=python "C:\Users\nitin\Programming\projects\music_runner\main.py" $*
 
 As shown in the images, the program is usable from any directory.
 
-<img src='./screenshots/screenshot4.png'>
-<img src='./screenshots/screenshot5.png'>
+<img src="./screenshots/screenshot4.png">
+<img src="./screenshots/screenshot5.png">
