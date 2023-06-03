@@ -32,6 +32,19 @@ metric to determine closeness)
 
 For a given input, we just pick the song whose name matches the most.
 
+# Further improvements
+
+There are various cases on which the matching algorithm does not gives expected resuts.
+
+- Priority of initial words
+For input `cool`, `cool guy` should be preferred to `guy cool`.
+
+- Consideration of amount of matching
+For input `else paris`, `else pariis` should be preffered `else pariiis` 
+
+- Extra words
+For input `you`, `you` should be prefferd to `you are my love`
+
 # Usage Example and Screenshots
 
 ![](./screenshots/screenshot1.png)
