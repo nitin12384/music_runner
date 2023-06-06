@@ -51,9 +51,9 @@ For input `you`, `you` should be prefferd to `you are my love`
 
 # Usage Example and Screenshots
 
-![](./screenshots/screenshot1.png)
-![](./screenshots/screenshot2.png)
-![](./screenshots/screenshot3.png)
+![](https://github.com/nitin12384/music_runner/blob/master/screenshots/screenshot1.png?raw=true)
+![](https://github.com/nitin12384/music_runner/blob/master/screenshots/screenshot2.png?raw=true)
+![](https://github.com/nitin12384/music_runner/blob/master/screenshots/screenshot3.png?raw=true)
 
 Configured alias using `cmder` tool to be able to use the program anywhere:
 ```
@@ -62,5 +62,5 @@ play_song=python "C:\Users\nitin\Programming\projects\music_runner\main.py" $*
 
 As shown in the images, the program is usable from any directory.
 
-![](./screenshots/screenshot4.png)
-![](./screenshots/screenshot5.png)
+![](https://github.com/nitin12384/music_runner/blob/master/screenshots/screenshot4.png?raw=true)
+![](https://github.com/nitin12384/music_runner/blob/master/screenshots/screenshot5.png?raw=true)
