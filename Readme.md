@@ -3,8 +3,10 @@
 A program to automatically play songs stored offline in the system based on approximate name matching.
 
 # Todo
-- [] Add screenshot images in Readme
+- [ ] Add screenshot images in Readme
 - [x] Add Further Improvements
+- [ ] Dont scan directories, only .mp3 files
+- [ ] Handle scenario of empty directory
 
 # Requirements
 Python 3
